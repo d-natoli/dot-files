@@ -110,7 +110,7 @@ alias dcd="docker-compose down"
 alias dcr="docker-compose run"
 alias dcrs="docker-compose restart"
 alias dgc="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc"
-alias dclu="docker volume rm $(docker volume ls -qf dangling=true)"
+alias dclu="docker volume rm \$(docker volume ls -qf dangling=true)"
 alias drmi="docker rmi \$(docker images -f \"dangling=true\" -q)"
 
 export VISUAL=vim
