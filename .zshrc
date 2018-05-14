@@ -118,27 +118,7 @@ export EDITOR="$VISUAL"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_CERT_PATH=/Users/dnatoli/.docker/machine/machines/dinghy
-export DOCKER_TLS_VERIFY=1
-export DOCKER_MACHINE_NAME=dinghy
-export CONSUL_HTTP_TOKEN=2f9499f8-6e52-289f-5728-81fe3078331f
-
-export BUNDLE_GEM__FURY__IO=aeoXieoPttEsFr6ftnpg
-
 # nodenv
 eval "$(nodenv init -)"
 
-# Android studio
-export ANDROID_HOME="${HOME}/Library/Android/sdk"
-export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:${PATH}"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/dnatoli/.nodenv/versions/6.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/dnatoli/.nodenv/versions/6.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/dnatoli/.nodenv/versions/6.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/dnatoli/.nodenv/versions/6.3.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-# Postgres
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
