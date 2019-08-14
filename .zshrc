@@ -92,6 +92,7 @@ alias gpf="git push -f"
 alias gpp="git pull -p"
 alias gpu="git push -u origin"
 alias grm="git rebase master"
+alias gstu="git stash -k -u"
 
 # Tig aliases
 alias tb="tig blame"
@@ -113,6 +114,9 @@ alias dgc="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:
 alias dclu="docker volume rm \$(docker volume ls -qf dangling=true)"
 alias drmi="docker rmi \$(docker images -f \"dangling=true\" -q)"
 
+# ctags aliases
+alias ctagsr="ctags -R --exclude=.git --exclude=node_modules"
+
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
@@ -122,3 +126,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval "$(nodenv init -)"
 
 
+
+# rbenv
+eval "$(rbenv init -)"
