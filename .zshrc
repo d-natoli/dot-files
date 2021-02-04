@@ -121,11 +121,5 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
-# nodenv
-eval "$(nodenv init -)"
-
-
-
-# rbenv
-eval "$(rbenv init -)"
