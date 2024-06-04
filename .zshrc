@@ -87,11 +87,11 @@ alias svim="source ~/.zshrc"
 
 # Git aliases
 alias gbd="git branch -D"
-alias gmm="git merge master"
+alias gmm="git merge main"
 alias gpf="git push -f"
 alias gpp="git pull -p"
 alias gpu="git push -u origin"
-alias grm="git rebase master"
+alias grm="git rebase main"
 alias gstu="git stash -k -u"
 
 # Tig aliases
@@ -113,9 +113,16 @@ alias dcrs="docker-compose restart"
 alias dgc="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc"
 alias dclu="docker volume rm \$(docker volume ls -qf dangling=true)"
 alias drmi="docker rmi \$(docker images -f \"dangling=true\" -q)"
+alias dprune="docker system prune"
+alias dkill="docker kill `docker ps | cut -d' ' -f1`"
+alias drmvol="docker volume rm `docker volume ls -qf dangling=true`"
 
 # ctags aliases
 alias ctagsr="ctags -R --exclude=.git --exclude=node_modules"
+
+# kubectl aliases
+alias kns="kubectl config set-context --current --namespace"
+alias kg="kubectl get"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
